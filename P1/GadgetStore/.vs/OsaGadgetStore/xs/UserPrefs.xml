@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MonoDevelop.Ide.ItemProperties.OsaGadgetStore PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OsaGadgetStore.Test/InventoryTests.cs">
+    <Files>
+      <File FileName="OsaGadgetStore/Program.cs" Line="31" Column="34" />
+      <File FileName="OsaGadgetStore/Connection.cs" Line="82" Column="1" />
+      <File FileName="OsaGadgetStore/MyData.cs" Line="19" Column="1" />
+      <File FileName="OsaGadgetStore/IConn.cs" Line="1" Column="1" />
+      <File FileName="OsaGadgetStore/ShoppingCart.cs" Line="24" Column="1" />
+      <File FileName="OsaGadgetStore/Inventory.cs" Line="77" Column="10" />
+      <File FileName="OsaGadgetStore.Test/InventoryTests.cs" Line="12" Column="16" />
+      <File FileName="OsaGadgetStore/IInventroy.cs" Line="1" Column="1" />
+      <File FileName="OsaGadgetStore/Shop.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OsaGadgetStore" expanded="True">
+            <Node name="OsaGadgetStore" expanded="True" />
+            <Node name="OsaGadgetStore.Test" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="OsaGadgetStore" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{9325D7EB-F566-465E-B07C-B9189872E6FB}" ItemName="OsaGadgetStore" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+</Properties>
