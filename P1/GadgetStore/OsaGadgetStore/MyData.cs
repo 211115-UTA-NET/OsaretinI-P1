@@ -1,12 +1,19 @@
 ﻿using System;
+using Newtonsoft.Json;
+
 namespace OsaGadgetStore
 {
     public class MyData
     {
+        [JsonProperty]
         private string itemName { get; set; }
+        [JsonProperty]
         private string location;
+        [JsonProperty]
         private double price;
+        [JsonProperty]
         private int quantity;
+        [JsonProperty]
         private int itemId;
 
 

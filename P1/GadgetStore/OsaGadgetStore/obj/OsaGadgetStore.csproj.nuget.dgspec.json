@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj": {}
+    "/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj": {}
   },
   "projects": {
-    "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj": {
+    "/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj",
+        "projectUniqueName": "/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj",
         "projectName": "OsaGadgetStore",
-        "projectPath": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj",
+        "projectPath": "/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj",
         "packagesPath": "/Users/osaiyen/.nuget/packages/",
-        "outputPath": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/",
+        "outputPath": "/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/osaiyen/.config/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.3, )"

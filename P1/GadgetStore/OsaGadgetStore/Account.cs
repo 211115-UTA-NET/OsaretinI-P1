@@ -1,19 +1,33 @@
 ﻿using System;
+using Newtonsoft.Json;
+
 namespace OsaGadgetStore
 {
-    public class Account : Shop
+    public class Account
     {
+
         private int CustomerId;
+        [JsonProperty]
+
         private string Fname;
+        [JsonProperty]
+
         private string Lname;
+        [JsonProperty]
+
         private string StreetAddress;
+        [JsonProperty]
+
         private string City;
+        [JsonProperty]
+
         private string State;
    
 
         private List<ShoppingCart> items;
 
 
+                private string connectionString = File.ReadAllText("/Users/osaiyen/documents/dbKey.txt");
 
 
         public Account(int cusId, string Fname, string Lname, string StreetAddress, string City, string State, List<ShoppingCart> items)

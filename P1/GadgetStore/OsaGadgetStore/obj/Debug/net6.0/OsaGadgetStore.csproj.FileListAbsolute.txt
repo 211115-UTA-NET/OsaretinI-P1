@@ -94,3 +94,56 @@
 /Users/osaiyen/Desktop/p1/p01/OsaGadgetStore/OsaGadgetStore/obj/Debug/net6.0/ref/OsaGadgetStore.dll
 /Users/osaiyen/Desktop/p1/p01/OsaGadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.pdb
 /Users/osaiyen/Desktop/p1/p01/OsaGadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.genruntimeconfig.cache
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/OsaGadgetStore
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/OsaGadgetStore.deps.json
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/OsaGadgetStore.runtimeconfig.json
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/OsaGadgetStore.dll
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/ref/OsaGadgetStore.dll
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/OsaGadgetStore.pdb
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/System.Data.SqlClient.dll
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/runtimes/win-arm64/native/sni.dll
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/runtimes/win-x64/native/sni.dll
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/runtimes/win-x86/native/sni.dll
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.csproj.AssemblyReference.cache
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.AssemblyInfoInputs.cache
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.AssemblyInfo.cs
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.csproj.CoreCompileInputs.cache
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.csproj.CopyComplete
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.dll
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/ref/OsaGadgetStore.dll
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.pdb
+/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.genruntimeconfig.cache
+/Volumes/SSD/new p0/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.csproj.AssemblyReference.cache
+/Volumes/SSD/new p0/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/SSD/new p0/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.AssemblyInfoInputs.cache
+/Volumes/SSD/new p0/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.AssemblyInfo.cs
+/Volumes/SSD/new p0/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.csproj.CoreCompileInputs.cache
+/Volumes/SSD/new p0/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.dll
+/Volumes/SSD/new p0/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/ref/OsaGadgetStore.dll
+/Volumes/SSD/new p0/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.pdb
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/OsaGadgetStore
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/OsaGadgetStore.deps.json
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/OsaGadgetStore.runtimeconfig.json
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/OsaGadgetStore.dll
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/ref/OsaGadgetStore.dll
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/OsaGadgetStore.pdb
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/System.Data.SqlClient.dll
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/runtimes/win-arm64/native/sni.dll
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/runtimes/win-x64/native/sni.dll
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/runtimes/win-x86/native/sni.dll
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.csproj.AssemblyReference.cache
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.AssemblyInfoInputs.cache
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.AssemblyInfo.cs
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.csproj.CoreCompileInputs.cache
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.csproj.CopyComplete
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.dll
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/ref/OsaGadgetStore.dll
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.pdb
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/Debug/net6.0/OsaGadgetStore.genruntimeconfig.cache
+/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/bin/Debug/net6.0/Newtonsoft.Json.dll

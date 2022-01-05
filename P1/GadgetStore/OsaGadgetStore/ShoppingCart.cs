@@ -1,14 +1,14 @@
 ﻿using System;
 namespace OsaGadgetStore
 {
-    public class ShoppingCart : Shop
+    public class ShoppingCart 
     {
-        private string itemName;
-        private int itemId;
-        private int itemNum;
-        private string location;
-        private double cost;
-        private int Quantity;
+        public string itemName;
+        public int itemId;
+        public int itemNum;
+        public string location;
+        public double cost;
+        public int Quantity;
 
         public ShoppingCart(int itemId, int itemNum, string itemName,  string location, double cost, int Quatity)
         {

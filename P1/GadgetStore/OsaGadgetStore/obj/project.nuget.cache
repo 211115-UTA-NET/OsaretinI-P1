@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8wBIKFBRjgrD/Ft09UPQI17PJ8SG4nd7jW9tVxwS48lPNYqPdeN2HsSytWq/LvabehmI+ivabrAlZ2sIlOZl0A==",
+  "dgSpecHash": "6RZG1fBr9TVf8o8OdJR7S9GLd61cGyLR27Pk2okGrdr+Xq1P6kqwzg5j/jyeA57/JkCxvCUmnQC8za4Ik3pC7w==",
   "success": true,
-  "projectFilePath": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj",
+  "projectFilePath": "/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj",
   "expectedPackageFiles": [
     "/Users/osaiyen/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "/Users/osaiyen/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "/Users/osaiyen/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/Users/osaiyen/.nuget/packages/runtime.native.system.data.sqlclient.sni/4.7.0/runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "/Users/osaiyen/.nuget/packages/runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "/Users/osaiyen/.nuget/packages/runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Text.Json;
+using OsaGadgetStore;
 using Microsoft.AspNetCore.Mvc;
 namespace P1GadgetStore.Controllers
 {
-    public class TestController
+    [Route("api/[controller]")]
+    [ApiController]
+    public class TestController : ControllerBase
     {
         private static readonly List<int> s_samples = new() { 12 };
 
@@ -12,10 +15,15 @@ namespace P1GadgetStore.Controllers
 
         // the job of an action method is to handle one set of requests
         // and return some "result" which asp.net will turn into the response
-        [HttpGet("/test")]
-        [HttpGet("/test")] // c# supports multiple attributes (same or different type)
-        public ContentResult GetSamples()
+        [HttpGet("/GetAllItems")] // c# supports multiple attributes (same or different type)
+                  // public async Task<ContentResult> GetSamples()
+        public ContentResult GetItems()
+
         {
+            // IEnumerable<MyData> result;
+            Inventory inventory = new Inventory();
+            List<MyData> result = inventory.GetAllInventory();
+
             // asp.net provides a bunch of data types under the IActionResult interface
             // and/or the ActionResult abstract base class.
             // the job of an action result is to deserialize itself into an http response.
@@ -23,18 +31,75 @@ namespace P1GadgetStore.Controllers
             // good for when you have something to put in the response body.
             // (otherwise... maybe StatusCodeResult)
 
-            string json = JsonSerializer.Serialize(s_samples);
 
-            var result = new ContentResult()
+            // Account acct = new Account();
+            //  List<Account> accinfo = acct.getCustomerInfo("paul");
+
+           // List<testingClass> mylist = new List<testingClass>();
+            // mylist.Add(new("sfsf","fre"));
+
+
+
+
+
+
+            // string json = JsonSerializer.Serialize(result);
+          //  string json = JsonSerializer.Serialize(mylist);
+            var json = Newtonsoft.Json.JsonConvert.SerializeObject(result);
+
+            // var result3 = new ContentResult()
+            // {
+            //     StatusCode = 200,
+            //     ContentType = "application/json",
+            //    Content = json
+            // };
+
+            // return new JsonResult(result3);
+
+            // IEnumerable<User> Users = await _repository.GetUsersAsync(name);
+
+
+
+            // return new JsonResult(json);
+            return new ContentResult()
             {
+                //StatusCode = StatusCodes.Status201Created,
                 StatusCode = 200,
                 ContentType = "application/json",
                 Content = json
             };
 
-            return result;
-        }
 
+        }
+      //  [HttpGet]
+        [HttpGet("/GetOrderByName/{id}")]
+        // public async Task<ContentResult> GetSamples()
+        public  ContentResult GetPeople(string id)
+        {
+
+
+
+
+
+            Account acct = new Account();
+            List<Account> accinfo =  acct.getCustomerInfo(id);
+
+
+
+
+         
+            var json =  Newtonsoft.Json.JsonConvert.SerializeObject(accinfo);
+
+
+            return new ContentResult()
+            {
+                //StatusCode = StatusCodes.Status201Created,
+                StatusCode = 200,
+                ContentType = "application/json",
+                Content = json
+            };
+
+        }
         // "model binding" runs before the action method:
         //   - looks at the action method parameters, tries to fill them in
         //     by deserializing parts of the request, based on the parameter name and type.
