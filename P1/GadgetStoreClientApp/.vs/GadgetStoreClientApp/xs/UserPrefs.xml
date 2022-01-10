@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{76C46FAB-ACC3-4ABC-B12A-2489BE5E5C3D}|Default">
+  <MonoDevelop.Ide.ItemProperties.GadgetStoreClientApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GadgetStoreClientApp/Program.cs">
+    <Files>
+      <File FileName="GadgetStoreClientApp/Program.cs" Line="36" Column="1" />
+      <File FileName="GadgetStoreClientApp/jsonData.cs" Line="2" Column="1" />
+      <File FileName="GadgetStoreClientApp/ShoppingCart.cs" Line="22" Column="140" />
+      <File FileName="GadgetStoreClientApp/Account.cs" Line="23" Column="29" />
+      <File FileName="GadgetStoreClientApp/SubmittedMove.cs" Line="7" Column="42" />
+      <File FileName="GadgetStoreClientApp/ServiceClass.cs" Line="41" Column="76" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GadgetStoreClientApp" expanded="True">
+            <Node name="GadgetStoreClientApp" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/osaiyen/Desktop/GadgetStoreClientApp/GadgetStoreClientApp/Program.cs" relfile="GadgetStoreClientApp/Program.cs" line="112" column="1" />
+      <Breakpoint file="/Users/osaiyen/Desktop/GadgetStoreClientApp/GadgetStoreClientApp/ServiceClass.cs" relfile="GadgetStoreClientApp/ServiceClass.cs" line="22" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

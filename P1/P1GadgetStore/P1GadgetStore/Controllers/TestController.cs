@@ -2,26 +2,34 @@
 using System.Text.Json;
 using OsaGadgetStore;
 using Microsoft.AspNetCore.Mvc;
+
 namespace P1GadgetStore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class TestController : ControllerBase
     {
-        private static readonly List<int> s_samples = new() { 12 };
-
+        //1/9/22
+        //private static readonly List<int> s_samples = new() { 12 };
+        private IConfiguration Configuration;
+        public TestController(IConfiguration _configuration)
+        {
+            Configuration = _configuration;
+        }
         // [Route] works for all http methods(verbs)
         // [HttpGet], [HttpPost], etc - to also limit it to a specific method.
 
         // the job of an action method is to handle one set of requests
         // and return some "result" which asp.net will turn into the response
         [HttpGet("/GetAllItems")] // c# supports multiple attributes (same or different type)
-                  // public async Task<ContentResult> GetSamples()
+                                  // public async Task<ContentResult> GetSamples()
         public ContentResult GetItems()
 
         {
+            string connString = this.Configuration.GetConnectionString("RPS-DB-Connection");
+
             // IEnumerable<MyData> result;
-            Inventory inventory = new Inventory();
+            Inventory inventory = new Inventory(connString);
             List<MyData> result = inventory.GetAllInventory();
 
             // asp.net provides a bunch of data types under the IActionResult interface
@@ -35,7 +43,7 @@ namespace P1GadgetStore.Controllers
             // Account acct = new Account();
             //  List<Account> accinfo = acct.getCustomerInfo("paul");
 
-           // List<testingClass> mylist = new List<testingClass>();
+            // List<testingClass> mylist = new List<testingClass>();
             // mylist.Add(new("sfsf","fre"));
 
 
@@ -44,7 +52,7 @@ namespace P1GadgetStore.Controllers
 
 
             // string json = JsonSerializer.Serialize(result);
-          //  string json = JsonSerializer.Serialize(mylist);
+            //  string json = JsonSerializer.Serialize(mylist);
             var json = Newtonsoft.Json.JsonConvert.SerializeObject(result);
 
             // var result3 = new ContentResult()
@@ -71,10 +79,10 @@ namespace P1GadgetStore.Controllers
 
 
         }
-      //  [HttpGet]
+        //  [HttpGet]
         [HttpGet("/GetOrderByName/{id}")]
         // public async Task<ContentResult> GetSamples()
-        public  ContentResult GetPeople(string id)
+        public ContentResult GetPeople(string id)
         {
 
 
@@ -82,13 +90,13 @@ namespace P1GadgetStore.Controllers
 
 
             Account acct = new Account();
-            List<Account> accinfo =  acct.getCustomerInfo(id);
+            List<Account> accinfo = acct.getCustomerInfo(id);
 
 
 
 
-         
-            var json =  Newtonsoft.Json.JsonConvert.SerializeObject(accinfo);
+
+            var json = Newtonsoft.Json.JsonConvert.SerializeObject(accinfo);
 
 
             return new ContentResult()
@@ -107,11 +115,26 @@ namespace P1GadgetStore.Controllers
         //   - if model binding doesn't find anything in the request... it'll be left at default (not exception)
         //       so it's important to validate those parameters. (user input)
         [HttpPost("/test")]
-        public ContentResult AddSample([FromBody] int sample)
+        //  public ContentResult AddSample([FromBody] List<testingClass> accountk2j)
+         // public ContentResult AddSample(List<testingClass> accountk2j)
+
+
+       // [HttpPost]
+        public async Task<IActionResult> AddRoundAsync(List<testingClass> accountk2j)
         {
-            // this is bad... List is NOT threadsafe. (use ConcurrentList iirc)
-            s_samples.Add(sample);
-            string json = JsonSerializer.Serialize(sample);
+            
+           // var json2 = JsonSerializer.Serialize(accountk2j);
+
+
+           // using (StreamReader reader = new StreamReader(Request.Body, Encoding.UTF8))
+            //{
+            //    string message = await reader.ReadToEndAsync();
+
+           // }
+                // this is bad... List is NOT threadsafe. (use ConcurrentList iirc)
+                //s_samples.Add(sample);
+                int sample2 = 2;
+            string json = JsonSerializer.Serialize(sample2);
 
             // good practice with POST, return a representation of the created resource in the body.
             return new ContentResult()

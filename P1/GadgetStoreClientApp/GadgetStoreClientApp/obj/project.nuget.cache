@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AxdbqeLeE3MVr3Jif7ifrAwppVpxLOGgYEG++u1BdVF8/RApO8Lvkdw5tObthAgJSeGvU1jlYtBSgEL0mq+Rrw==",
+  "success": true,
+  "projectFilePath": "/Users/osaiyen/Desktop/GadgetStoreClientApp/GadgetStoreClientApp/GadgetStoreClientApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/osaiyen/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

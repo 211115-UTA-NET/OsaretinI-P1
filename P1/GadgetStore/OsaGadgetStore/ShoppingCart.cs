@@ -3,12 +3,12 @@ namespace OsaGadgetStore
 {
     public class ShoppingCart 
     {
-        public string itemName;
-        public int itemId;
-        public int itemNum;
-        public string location;
-        public double cost;
-        public int Quantity;
+        public string itemName { get; set; }
+        public int itemId { get; set; }
+        public int itemNum { get; set; }
+        public string location { get; set; }
+        public double cost { get; set; }
+        public int Quantity { get; set; }
 
         public ShoppingCart(int itemId, int itemNum, string itemName,  string location, double cost, int Quatity)
         {

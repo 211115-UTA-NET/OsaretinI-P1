@@ -6,22 +6,22 @@ namespace OsaGadgetStore
     public class Account
     {
 
-        private int CustomerId;
+        public int CustomerId;
         [JsonProperty]
 
-        private string Fname;
+        public string Fname;
         [JsonProperty]
 
-        private string Lname;
+        public string Lname;
         [JsonProperty]
 
-        private string StreetAddress;
+        public string StreetAddress;
         [JsonProperty]
 
-        private string City;
+        public string City;
         [JsonProperty]
 
-        private string State;
+        public string State;
    
 
         private List<ShoppingCart> items;

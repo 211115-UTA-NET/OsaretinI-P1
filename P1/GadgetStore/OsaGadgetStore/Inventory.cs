@@ -4,8 +4,8 @@ namespace OsaGadgetStore
 {
     public class Inventory:IInventroy
     {
-        public string connectionString = File.ReadAllText("/Users/osaiyen/documents/dbKey.txt");
-
+        //public string connectionString = File.ReadAllText("/Users/osaiyen/documents/dbKey.txt");
+        private string connectionString;
         private string itemName;
         private string itemId;
         private string location;
@@ -20,10 +20,16 @@ namespace OsaGadgetStore
           //  this.cost = cost;
           //  this.location = location;
         }
-
         public Inventory()
         {
+            
+            //  this.cost = cost;
+            //  this.location = location;
+        }
 
+        public Inventory(string connectionString)
+        {
+            this.connectionString = connectionString;
         }
 
         public Inventory(string itemName, string Cost, string Quantity, string time)
