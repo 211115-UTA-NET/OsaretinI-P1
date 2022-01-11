@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-//1/9/22
+﻿//1/9/22
 using System.Net;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
@@ -15,10 +14,7 @@ namespace GadgetStoreClientApp
 
         public async static Task Main(string[] args)
         {
-            //Console.WriteLine("Hello, World!");
             HttpClient client = new HttpClient();
-
-
             Console.WriteLine("Welcome to Gadget Store");
 
             Console.WriteLine("Type 1 to shop, Type 2 to search  by name");
@@ -26,18 +22,10 @@ namespace GadgetStoreClientApp
 
             if (res == "1")
             {
-                //  Inventory inventory = new Inventory();
-                // List<MyData> result = inventory.GetAllInventory();
-                //List<jsonData> result = new();
+               
                 List<ShoppingCart> cartList = new();
-
                 ShoppingCart cart = new ShoppingCart();
-                // List<jsonData> cart = new();
-                //  HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetOrderByName/paul");
-
                 HttpResponseMessage response = await client.GetAsync("https://gadgetstore20220110172934.azurewebsites.net/GetAllItems");
-
-                // HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetAllItems");
                 response.EnsureSuccessStatusCode();
                 var responseBody = await response.Content.ReadAsStringAsync();
 
@@ -105,7 +93,6 @@ namespace GadgetStoreClientApp
                         Account user = new Account(RandomitemNumber, fName, lName, StreetAddress, City, State, cartList);
 
                         var json = Newtonsoft.Json.JsonConvert.SerializeObject(user);
-                        //https://localhost:7150/test
 
 
 
@@ -114,7 +101,6 @@ namespace GadgetStoreClientApp
 
 
 
-                        // var url = "https://localhost:7150/test";
                         var url = "https://gadgetstore20220110172934.azurewebsites.net/test";
                         var httpRequest = (HttpWebRequest)WebRequest.Create(url);
                         httpRequest.Method = "POST";
@@ -122,19 +108,6 @@ namespace GadgetStoreClientApp
                         httpRequest.Headers["Authorization"] = "Bearer tr";
                         httpRequest.ContentType = "application/json";
 
-                        //  var data = @"  [{
-                        //       ""name"":""name 1"",
-                        //   ""address"":""address 1"",
-                        //         ""age"":1
-                        //      },
-                        //    {
-                        //       ""name"":""name 2"",
-                        //  ""address"":""address 2"",
-                        // ""age"":2
-                        //   }]";
-
-
-                        // var jsonF = System.Text.Json.JsonSerializer.Serialize(fd);
                         var jsonF = Newtonsoft.Json.JsonConvert.SerializeObject(fd);
 
 
@@ -151,36 +124,7 @@ namespace GadgetStoreClientApp
 
                         Console.WriteLine(httpResponse.StatusCode);
 
-
-                        // Wrap our JSON inside a StringContent which then can be used by the HttpClient class
-                        ///   var httpContent = new StringContent(stringPayload, Encoding.UTF8, "application/json");
-
-                        //   var httpClient = new HttpClient();
-
-                        // Do the actual request and await the response
-                        //    var httpResponse = await httpClient.PostAsync("https://localhost:7150/", httpContent);
-
-                        // If the response contains content we want to read it!
-                        //   if (httpResponse.Content != null)
-                        //   {
-                        //     var responseContent = await httpResponse.Content.ReadAsStringAsync();
-
-                        // From here on you could deserialize the ResponseContent back again to a concrete C# type using Json.Net
-                        //    }
-
-
-
-
-
-
-
-
-
-
                     }
-
-
-
 
                 }
 
@@ -188,13 +132,9 @@ namespace GadgetStoreClientApp
 
             else if (res == "2")
             {
-
-
                 Console.WriteLine("Enter Customer First Name and press enter");
                 string cusName = Console.ReadLine();
                 Console.WriteLine("Press 1 to view customer info, Press 2 to view order history");
-
-
                 res = Console.ReadLine();
                 try
                 {
@@ -216,7 +156,6 @@ namespace GadgetStoreClientApp
 
                     HttpResponseMessage response = await client.GetAsync("https://gadgetstore20220110172934.azurewebsites.net/GetOrderByName/" + cusName);
 
-                   //  HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetOrderByName/" + cusName);
                     response.EnsureSuccessStatusCode();
                     var responseBody = await response.Content.ReadAsStringAsync();
 
@@ -224,12 +163,6 @@ namespace GadgetStoreClientApp
 
 
                     List<Account> result = JsonConvert.DeserializeObject<List<Account>>(responseBody);
-
-
-                 //   Account acct = new Account();
-                   // List<Account> accinfo = acct.getCustomerInfo(cusName);
-
-
 
                     foreach (var item in result)
                     {
@@ -239,12 +172,9 @@ namespace GadgetStoreClientApp
                 }
                 else if (res == "2")
                 {
-                    //string itemName, string location, double price, int quantity, string time)
-                    //  HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetOrderByName/paul");
-
+              
                    HttpResponseMessage response = await client.GetAsync("https://gadgetstore20220110172934.azurewebsites.net/GetOrderHistory/" + cusName);
 
-                    //  HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetOrderHistory/" + cusName);
                     response.EnsureSuccessStatusCode();
                     var responseBody = await response.Content.ReadAsStringAsync();
 

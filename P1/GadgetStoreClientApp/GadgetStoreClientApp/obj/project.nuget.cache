@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qOXpvr/ob8cW88q2dKclVTx8Xmx9oYuK3u9wqDPswsR0d5iH4qTp9pb1I8Z46V2qyOiEOgLF0Afz2pUEnM67aw==",
+  "dgSpecHash": "eJ67SNLa8Y5pXYeLqkdkYgnYI2608Hz1OhwZytA41DoMuXRQsw5BWs6pVd3s3h6IG+UF7+i9xC4oTPIntVFEbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\GadgetStoreClientApp\\GadgetStoreClientApp\\GadgetStoreClientApp.csproj",
+  "projectFilePath": "/Users/osaiyen/Desktop/new/untitled folder/GadgetStoreClientApp/GadgetStoreClientApp/GadgetStoreClientApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mikeo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "/Users/osaiyen/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }
