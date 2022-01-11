@@ -24,9 +24,6 @@ namespace OsaGadgetStore
             this.price = price;
             this.quantity = quantity;
             this.itemId = itemId;
-
-            //  this.cost = cost;
-            //  this.location = location;
         }
 
         public string getName()

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P1GadgetStore", "P1GadgetStore\P1GadgetStore.csproj", "{6EE03D39-D65C-406D-87AD-C7040EED7420}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P1GadgetStoreAPI", "P1GadgetStore\P1GadgetStoreAPI.csproj", "{6EE03D39-D65C-406D-87AD-C7040EED7420}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OsaGadgetStore", "..\GadgetStore\OsaGadgetStore\OsaGadgetStore.csproj", "{DC3CC7CC-41EF-41B2-9B54-0D13C0483A94}"
 EndProject

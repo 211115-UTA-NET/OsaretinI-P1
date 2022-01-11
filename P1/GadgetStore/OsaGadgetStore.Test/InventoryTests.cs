@@ -13,14 +13,13 @@ namespace OsaGadgetStore.Test;
 public class UnitTest1
 {
     [Fact]
-    public void CheckSettingPrice()
+    public void TestSettingPrice()
     {
 
         //arrange
         var cart = new ShoppingCart(2, 3, "Samsung TV", "Tx", 20.00, 4);
 
         //Act
-        //double ans = 198.99;
         double ans = cart.setTotalPricePerItem(10.00);
 
         //Assert
@@ -30,18 +29,13 @@ public class UnitTest1
 
 
     [Fact]
-    public void LoadCustomer()
+    public void TestLoadCustomer()
     {
-       
-
-        // arrange
-        string userName = "paul";
+      string userName = "paul";
         Mock<Account> mockDecider = new();
         Mock<IConn> mockRepo = new();
-
-       // "First Name: " + item.getFName() + " Last Name " + item.getLName() + " Street " + item.getStreetAddress() + " City: " + item.getCity() + " State: " + item.getState())
         List<Account> people = new()
-        { //    Expected: ···ame: Paul Last Name Thoms Street 100 Main St City: Hartford S···
+        { 
 
             new()
             {

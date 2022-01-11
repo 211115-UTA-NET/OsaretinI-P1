@@ -28,15 +28,6 @@ namespace OsaGadgetStore
                 from Inventory",
                 connection);
 
-            // using (SqlDataReader reader = cmd.ExecuteReader())
-            // {
-            //     while (reader.Read())
-            //     {
-
-            //         Console.WriteLine(String.Format("{0}", reader["FirstName"]));
-
-            //      }
-            //  }
             using SqlDataAdapter adapter = new(cmd);
             DataSet dataSet = new();
             adapter.Fill(dataSet);
@@ -45,8 +36,7 @@ namespace OsaGadgetStore
 
             foreach(DataRow row in dataSet.Tables[0].Rows)
             {
-                //Console.WriteLine($"{row["FirstName"]}: \"{row["LastName"]}");
-                // Console.WriteLine(row["FirstName"]);
+                
                 int itemId = Convert.ToInt32(row["ID"]);
                 string? itemName =row["ItemName"].ToString();
                 double itemPrice = Convert.ToDouble(row["ItemPrice"]);
@@ -86,7 +76,6 @@ namespace OsaGadgetStore
 
             foreach (var item in items)
                {
-                // Console.WriteLine("Item#: " + item.getItemId() + " " + item.getName() + " Price: $" + item.getPrice() + " Location: " + item.getLocation() + " Quatity: " + item.getQuatity());
                 string time = DateTime.Now.ToString("HH:mm:ss tt");
 
                 string query2 = "INSERT INTO [Order] (ID, ItemId, Cost, Quantity, Time)";
@@ -141,10 +130,6 @@ namespace OsaGadgetStore
                 string? cusCity = row["City"].ToString();
                 string? cusState = row["State"].ToString();
 
-                //double itemPrice = Convert.ToDouble(row["ItemPrice"]);
-                // string? itemLocation = row["ItemLocation"].ToString();
-                // int itemQuantity = Convert.ToInt32(row["ItemQuantity"]);
-
 
                 result.Add(new(cusName, cusLname, cusStreetAddress, cusCity, cusState));
 
@@ -188,11 +173,6 @@ namespace OsaGadgetStore
                 string? Cost = row["Cost"].ToString();
                 string? Quantity = row["Quantity"].ToString();
                 string? Time = row["Time"].ToString();
-
-                //double itemPrice = Convert.ToDouble(row["ItemPrice"]);
-                // string? itemLocation = row["ItemLocation"].ToString();
-                // int itemQuantity = Convert.ToInt32(row["ItemQuantity"]);
-
 
                 result.Add(new(itemName, Cost, Quantity,Time));
 

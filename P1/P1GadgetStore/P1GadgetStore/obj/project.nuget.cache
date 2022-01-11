@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g6MWfgQwNnZVPgYoYAJVxQB1iPCEvIVum0YW2BNL+KqbfpqPl3+a09qzBT4rYdumu7Y2QxtipZMT/bMz6Nkdog==",
+  "dgSpecHash": "Z4gvQu/hx3QIpglwPlTkHNGKwwhKkcwuIrfc7WlN3BfjwrAiolqT7rB1Al3k1vFMXMsCHhtTgo0xxmGPoM3O+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\P1GadgetStore\\P1GadgetStore\\P1GadgetStore.csproj",
+  "projectFilePath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\P1GadgetStore\\P1GadgetStore\\P1GadgetStoreAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mikeo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\mikeo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

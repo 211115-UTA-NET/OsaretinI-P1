@@ -5,9 +5,9 @@ namespace OsaGadgetStore
 {
     public class Inventory:IInventroy
     {
-        public string connectionString = File.ReadAllText("C:/dbKey.txt");
+       // public string connectionString = File.ReadAllText("C:/dbKey.txt");
 
-      //  private string connectionString;
+       private string connectionString;
         [JsonProperty]
 
         private string itemName;

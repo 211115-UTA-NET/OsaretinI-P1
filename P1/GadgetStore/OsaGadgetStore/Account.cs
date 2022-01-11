@@ -27,12 +27,12 @@ namespace OsaGadgetStore
         private List<ShoppingCart> items;
 
 
-         private string connectionString = File.ReadAllText("C:/dbKey.txt");
-             //    private string connectionString;
+       // private string connectionString = File.ReadAllText("C:/dbKey.txt");
+                 private string connectionString;
 
         public Account(string connectionString)
         {
-           // this.connectionString = connectionString;
+            this.connectionString = connectionString;
         }
         public Account(int cusId, string Fname, string Lname, string StreetAddress, string City, string State, List<ShoppingCart> items)
         {
@@ -80,9 +80,6 @@ namespace OsaGadgetStore
            
                  text =  "First Name: " + allRecords[0].getFName() + " Last Name " + allRecords[0].getLName() + " Street " + allRecords[0].getStreetAddress() + " City: " + allRecords[0].getCity() + " State: " + allRecords[0].getState();
             
-
-           // text = text.Replace("@", "" + System.Environment.NewLine);
-
             return text;
         }
 

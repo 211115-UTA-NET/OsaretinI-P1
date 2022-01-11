@@ -515,9 +515,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\P1GadgetStore\\P1GadgetStore\\P1GadgetStore.csproj",
-      "projectName": "P1GadgetStore",
-      "projectPath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\P1GadgetStore\\P1GadgetStore\\P1GadgetStore.csproj",
+      "projectUniqueName": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\P1GadgetStore\\P1GadgetStore\\P1GadgetStoreAPI.csproj",
+      "projectName": "P1GadgetStoreAPI",
+      "projectPath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\P1GadgetStore\\P1GadgetStore\\P1GadgetStoreAPI.csproj",
       "packagesPath": "C:\\Users\\mikeo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\P1GadgetStore\\P1GadgetStore\\obj\\",
       "projectStyle": "PackageReference",
