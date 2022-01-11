@@ -16,6 +16,7 @@ namespace GadgetStoreClientApp
         public async static Task Main(string[] args)
         {
             //Console.WriteLine("Hello, World!");
+            HttpClient client = new HttpClient();
 
 
             Console.WriteLine("Welcome to Gadget Store");
@@ -32,9 +33,11 @@ namespace GadgetStoreClientApp
 
                 ShoppingCart cart = new ShoppingCart();
                 // List<jsonData> cart = new();
-                HttpClient client = new HttpClient();
                 //  HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetOrderByName/paul");
-                HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetAllItems");
+
+                HttpResponseMessage response = await client.GetAsync("https://gadgetstore20220110172934.azurewebsites.net/GetAllItems");
+
+                // HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetAllItems");
                 response.EnsureSuccessStatusCode();
                 var responseBody = await response.Content.ReadAsStringAsync();
 
@@ -84,39 +87,54 @@ namespace GadgetStoreClientApp
                     {
                         breakloop = true;
 
-                        Account user = new Account(RandomitemNumber, "mike", "tata", "100 mst", "wtby", "CT", cartList);
+
+
+                        Console.WriteLine("Enter your first Name");
+                        string fName = Console.ReadLine().ToString();
+                        Console.WriteLine("Enter your Last Name");
+                        string lName = Console.ReadLine().ToString();
+                        Console.WriteLine("Enter your Street Address");
+                        string StreetAddress = Console.ReadLine().ToString();
+                        Console.WriteLine("Enter your City");
+                        string City = Console.ReadLine().ToString();
+                        Console.WriteLine("Enter your State");
+                        string State = Console.ReadLine().ToString();
+
+
+
+                        Account user = new Account(RandomitemNumber, fName, lName, StreetAddress, City, State, cartList);
 
                         var json = Newtonsoft.Json.JsonConvert.SerializeObject(user);
                         //https://localhost:7150/test
 
 
 
+                        List<Account> fd = new();
+                        fd.Add(new(RandomitemNumber, fName, lName, StreetAddress, City, State, cartList));
 
-          
 
-                    
-                        var url = "https://localhost:7150/test";
 
+                        // var url = "https://localhost:7150/test";
+                        var url = "https://gadgetstore20220110172934.azurewebsites.net/test";
                         var httpRequest = (HttpWebRequest)WebRequest.Create(url);
                         httpRequest.Method = "POST";
 
                         httpRequest.Headers["Authorization"] = "Bearer tr";
                         httpRequest.ContentType = "application/json";
 
-                      //  var data = @"  [{
+                        //  var data = @"  [{
                         //       ""name"":""name 1"",
-                          //   ""address"":""address 1"",
-                            //         ""age"":1
-                              //      },
-                                //    {
-                                  //       ""name"":""name 2"",
-                                   //  ""address"":""address 2"",
-                                   // ""age"":2
-                                     //   }]";
-                        List<Account> fd = new();
-                       fd.Add(new(RandomitemNumber, "mike", "tata", "100 mst", "wtby", "CT", cartList));
+                        //   ""address"":""address 1"",
+                        //         ""age"":1
+                        //      },
+                        //    {
+                        //       ""name"":""name 2"",
+                        //  ""address"":""address 2"",
+                        // ""age"":2
+                        //   }]";
 
-                       // var jsonF = System.Text.Json.JsonSerializer.Serialize(fd);
+
+                        // var jsonF = System.Text.Json.JsonSerializer.Serialize(fd);
                         var jsonF = Newtonsoft.Json.JsonConvert.SerializeObject(fd);
 
 
@@ -165,11 +183,92 @@ namespace GadgetStoreClientApp
 
 
                 }
-               
+
             }
+
+            else if (res == "2")
+            {
+
+
+                Console.WriteLine("Enter Customer First Name and press enter");
+                string cusName = Console.ReadLine();
+                Console.WriteLine("Press 1 to view customer info, Press 2 to view order history");
+
+
+                res = Console.ReadLine();
+                try
+                {
+
+                    if (string.IsNullOrWhiteSpace(res))
+                    {
+                        throw new ArgumentException();
+                    }
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Invalid Input");
+                    return;
+                }
+
+                if (res == "1")
+                {
+
+
+                    HttpResponseMessage response = await client.GetAsync("https://gadgetstore20220110172934.azurewebsites.net/GetOrderByName/" + cusName);
+
+                   //  HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetOrderByName/" + cusName);
+                    response.EnsureSuccessStatusCode();
+                    var responseBody = await response.Content.ReadAsStringAsync();
+
+
+
+
+                    List<Account> result = JsonConvert.DeserializeObject<List<Account>>(responseBody);
+
+
+                 //   Account acct = new Account();
+                   // List<Account> accinfo = acct.getCustomerInfo(cusName);
+
+
+
+                    foreach (var item in result)
+                    {
+                        Console.WriteLine("Your Customer Info");
+                        Console.WriteLine("First Name: " + item.Fname + " Last Name " + item.Lname+ " Street " + item.StreetAddress + " City: " + item.City + " State: " + item.State);
+                    }
+                }
+                else if (res == "2")
+                {
+                    //string itemName, string location, double price, int quantity, string time)
+                    //  HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetOrderByName/paul");
+
+                   HttpResponseMessage response = await client.GetAsync("https://gadgetstore20220110172934.azurewebsites.net/GetOrderHistory/" + cusName);
+
+                    //  HttpResponseMessage response = await client.GetAsync("https://localhost:7150/GetOrderHistory/" + cusName);
+                    response.EnsureSuccessStatusCode();
+                    var responseBody = await response.Content.ReadAsStringAsync();
+
+
+                    List<JsonOrderData> result = JsonConvert.DeserializeObject<List<JsonOrderData>>(responseBody);
+                    Console.WriteLine("Your Order History");
+
+                    //display inventory
+                    int i = 0;
+                    foreach (var item in result)
+                    {
+                        Console.WriteLine("Item#: " + i + " " + item.itemName + " Price: $" + item.cost + " Location: "  + " Quatity: " + item.Quatity);
+                        i++;
+                    }
+                }
+
+                else
+                {
+                    Console.WriteLine("invalid input ");
+                }
+            }
+
+
+
         }
-
-
-
     }
 }

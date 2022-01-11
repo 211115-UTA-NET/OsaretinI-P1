@@ -1,0 +1,1 @@
+dotnet OsaGadgetStore.dll %*

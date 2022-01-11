@@ -1,0 +1,7 @@
+C:\Users\mikeo\Desktop\untitled folder\GadgetStoreClientApp\GadgetStoreClientApp\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\GadgetStoreClientApp\Settings.job
+C:\Users\mikeo\Desktop\untitled folder\GadgetStoreClientApp\GadgetStoreClientApp\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\GadgetStoreClientApp\GadgetStoreClientApp.exe
+C:\Users\mikeo\Desktop\untitled folder\GadgetStoreClientApp\GadgetStoreClientApp\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\GadgetStoreClientApp\GadgetStoreClientApp.dll
+C:\Users\mikeo\Desktop\untitled folder\GadgetStoreClientApp\GadgetStoreClientApp\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\GadgetStoreClientApp\GadgetStoreClientApp.deps.json
+C:\Users\mikeo\Desktop\untitled folder\GadgetStoreClientApp\GadgetStoreClientApp\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\GadgetStoreClientApp\GadgetStoreClientApp.runtimeconfig.json
+C:\Users\mikeo\Desktop\untitled folder\GadgetStoreClientApp\GadgetStoreClientApp\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\GadgetStoreClientApp\GadgetStoreClientApp.pdb
+C:\Users\mikeo\Desktop\untitled folder\GadgetStoreClientApp\GadgetStoreClientApp\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\GadgetStoreClientApp\Newtonsoft.Json.dll

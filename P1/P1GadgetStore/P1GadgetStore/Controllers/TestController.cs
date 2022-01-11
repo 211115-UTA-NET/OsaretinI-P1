@@ -16,6 +16,7 @@ namespace P1GadgetStore.Controllers
         {
             Configuration = _configuration;
         }
+
         // [Route] works for all http methods(verbs)
         // [HttpGet], [HttpPost], etc - to also limit it to a specific method.
 
@@ -32,27 +33,7 @@ namespace P1GadgetStore.Controllers
             Inventory inventory = new Inventory(connString);
             List<MyData> result = inventory.GetAllInventory();
 
-            // asp.net provides a bunch of data types under the IActionResult interface
-            // and/or the ActionResult abstract base class.
-            // the job of an action result is to deserialize itself into an http response.
-            // a basic one we can start with is ContentResult.
-            // good for when you have something to put in the response body.
-            // (otherwise... maybe StatusCodeResult)
-
-
-            // Account acct = new Account();
-            //  List<Account> accinfo = acct.getCustomerInfo("paul");
-
-            // List<testingClass> mylist = new List<testingClass>();
-            // mylist.Add(new("sfsf","fre"));
-
-
-
-
-
-
-            // string json = JsonSerializer.Serialize(result);
-            //  string json = JsonSerializer.Serialize(mylist);
+        
             var json = Newtonsoft.Json.JsonConvert.SerializeObject(result);
 
             // var result3 = new ContentResult()
@@ -87,10 +68,43 @@ namespace P1GadgetStore.Controllers
 
 
 
+            string connString = this.Configuration.GetConnectionString("RPS-DB-Connection");
 
 
-            Account acct = new Account();
+            Account acct = new Account(connString);
             List<Account> accinfo = acct.getCustomerInfo(id);
+
+
+
+
+
+            var json = Newtonsoft.Json.JsonConvert.SerializeObject(accinfo);
+
+
+            return new ContentResult()
+            {
+                //StatusCode = StatusCodes.Status201Created,
+                StatusCode = 200,
+                ContentType = "application/json",
+                Content = json
+            };
+
+        }
+        //  [HttpGet]
+        [HttpGet("/GetOrderHistory/{id}")]
+        // public async Task<ContentResult> GetSamples()
+        public ContentResult GetOrderHistory(string id)
+        {
+
+
+
+            string connString = this.Configuration.GetConnectionString("RPS-DB-Connection");
+
+            Inventory acct = new Inventory(connString);
+            List<Inventory> accinfo = acct.getInventoryOrderHistory(id);
+
+          //  Account acct = new Account(connString);
+          //  List<Account> accinfo = acct.getCustomerInfo(id);
 
 
 
@@ -122,26 +136,33 @@ namespace P1GadgetStore.Controllers
        // [HttpPost]
         public async Task<IActionResult> AddRoundAsync(List<testingClass> accountk2j)
         {
-            
-           // var json2 = JsonSerializer.Serialize(accountk2j);
 
+         
+            string connString = this.Configuration.GetConnectionString("RPS-DB-Connection");
 
-           // using (StreamReader reader = new StreamReader(Request.Body, Encoding.UTF8))
-            //{
-            //    string message = await reader.ReadToEndAsync();
+          //   Connection repository = new Connection(connString);
+           // repository.SaveToDb(accountk2j[0].CustomerId, accountk2j[0].Fname, accountk2j[0].Lname, accountk2j[0].StreetAddress, accountk2j[0].City, accountk2j[0].State, accountk2j[0].items.ToList);
 
-           // }
-                // this is bad... List is NOT threadsafe. (use ConcurrentList iirc)
-                //s_samples.Add(sample);
-                int sample2 = 2;
-            string json = JsonSerializer.Serialize(sample2);
+            List<ShoppingCart> fd = new();
+            // fd = accountk2j[0].items;
+
+            for (int i = 0; i < accountk2j[0].items.Length; i++)
+            {
+               
+             fd.Add(new(Convert.ToInt32(accountk2j[0].items[i].itemId), accountk2j[0].items[i].itemNum, accountk2j[0].items[i].itemName, accountk2j[0].items[i].location, accountk2j[0].items[i].cost, accountk2j[0].items[i].Quantity));
+                
+            }
+            Connection repository = new Connection(connString);
+             repository.SaveToDb(accountk2j[0].CustomerId, accountk2j[0].Fname, accountk2j[0].Lname, accountk2j[0].StreetAddress, accountk2j[0].City, accountk2j[0].State, fd);
+
+        
 
             // good practice with POST, return a representation of the created resource in the body.
             return new ContentResult()
             {
                 StatusCode = StatusCodes.Status201Created,
-                ContentType = "application/json",
-                Content = json
+                ContentType = "application/json"
+                
             };
         }
     }

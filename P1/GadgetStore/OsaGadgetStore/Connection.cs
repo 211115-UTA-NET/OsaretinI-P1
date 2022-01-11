@@ -100,7 +100,7 @@ namespace OsaGadgetStore
                 myCommand2.Parameters.AddWithValue("@Time", time);
 
                 myCommand2.ExecuteNonQuery();
-                Thread.Sleep(2000);
+              //  Thread.Sleep(2000);
             }
 
 

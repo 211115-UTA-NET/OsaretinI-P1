@@ -12,6 +12,7 @@ namespace GadgetStoreClientApp
         public double price { get; set; }
         public int quantity { get; set; }
         public int itemId { get; set; }
+        public  string time { get; set; }
 
         public jsonData(int itemId, string itemName, string location, double price, int quantity)
         {
@@ -24,6 +25,7 @@ namespace GadgetStoreClientApp
             //  this.cost = cost;
             //  this.location = location;
         }
+       
         public void setNewQuantity(int newQuantity)
         {
             quantity = newQuantity;

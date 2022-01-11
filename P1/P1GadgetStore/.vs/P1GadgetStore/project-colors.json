@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6ee03d39-d65c-406d-87ad-c7040eed7420": {
+      "ProjectGuid": "6ee03d39-d65c-406d-87ad-c7040eed7420",
+      "DisplayName": "P1GadgetStore",
+      "ColorIndex": 0
+    },
+    "dc3cc7cc-41ef-41b2-9b54-0d13c0483a94": {
+      "ProjectGuid": "dc3cc7cc-41ef-41b2-9b54-0d13c0483a94",
+      "DisplayName": "OsaGadgetStore",
+      "ColorIndex": 1
+    },
+    "019e5199-4a7e-4ec7-922c-7032580ee2c5": {
+      "ProjectGuid": "019e5199-4a7e-4ec7-922c-7032580ee2c5",
+      "DisplayName": "OsaGadgetStore.Test",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

@@ -65,15 +65,16 @@ namespace OsaGadgetStore
                     Account acct = new Account();
 
 
-                    List<Account> accinfo = acct.getCustomerInfo(cusName);
+                    string accinfo = acct.getCustomerInfoAsString(cusName);
 
+                    Console.WriteLine("Your Customer Info");
+                    Console.WriteLine(accinfo);
 
-
-                    foreach (var item in accinfo)
-                    {
-                        Console.WriteLine("Your Customer Info");
-                        Console.WriteLine("First Name: " + item.getFName() + " Last Name " + item.getLName() + " Street " + item.getStreetAddress() + " City: " + item.getCity() + " State: " + item.getState());
-                    }
+                   // foreach (var item in accinfo)
+                   //  {
+                   //      Console.WriteLine("Your Customer Info");
+                   //        Console.WriteLine("First Name: " + item.getFName() + " Last Name " + item.getLName() + " Street " + item.getStreetAddress() + " City: " + item.getCity() + " State: " + item.getState());
+                   //  }
                 }
                 else if (response == "2")
                 {

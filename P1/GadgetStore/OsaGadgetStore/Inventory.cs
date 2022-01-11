@@ -1,16 +1,29 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace OsaGadgetStore
 {
     public class Inventory:IInventroy
     {
-        //public string connectionString = File.ReadAllText("/Users/osaiyen/documents/dbKey.txt");
-        private string connectionString;
+        public string connectionString = File.ReadAllText("C:/dbKey.txt");
+
+      //  private string connectionString;
+        [JsonProperty]
+
         private string itemName;
+
         private string itemId;
+        [JsonProperty]
+
         private string location;
+        [JsonProperty]
+
         private double cost;
+        [JsonProperty]
+
         private int Quatity;
+        [JsonProperty]
+
         private string time;
 
         public Inventory(string itemName, string itemId)
@@ -40,6 +53,10 @@ namespace OsaGadgetStore
             this.time = time;
         }
         
+
+
+
+
 
         public List<Inventory> getInventoryOrderHistory(string name)
         {

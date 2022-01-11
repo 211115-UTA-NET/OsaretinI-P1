@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore.Test/OsaGadgetStore.Test.csproj": {}
+    "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore.Test\\OsaGadgetStore.Test.csproj": {}
   },
   "projects": {
-    "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore.Test/OsaGadgetStore.Test.csproj": {
+    "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore.Test\\OsaGadgetStore.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore.Test/OsaGadgetStore.Test.csproj",
+        "projectUniqueName": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore.Test\\OsaGadgetStore.Test.csproj",
         "projectName": "OsaGadgetStore.Test",
-        "projectPath": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore.Test/OsaGadgetStore.Test.csproj",
-        "packagesPath": "/Users/osaiyen/.nuget/packages/",
-        "outputPath": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore.Test/obj/",
+        "projectPath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore.Test\\OsaGadgetStore.Test.csproj",
+        "packagesPath": "C:\\Users\\mikeo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/osaiyen/.config/NuGet/NuGet.Config"
+          "C:\\Users\\mikeo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj": {
-                "projectPath": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj"
+              "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore\\OsaGadgetStore.csproj": {
+                "projectPath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore\\OsaGadgetStore.csproj"
               }
             }
           }
@@ -42,9 +44,21 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Autofac.Extras.Moq": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.11.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "Moq.AutoMock": {
+              "target": "Package",
+              "version": "[3.1.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -78,26 +92,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj": {
+    "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore\\OsaGadgetStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj",
+        "projectUniqueName": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore\\OsaGadgetStore.csproj",
         "projectName": "OsaGadgetStore",
-        "projectPath": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/OsaGadgetStore.csproj",
-        "packagesPath": "/Users/osaiyen/.nuget/packages/",
-        "outputPath": "/Users/osaiyen/Desktop/P1/OsaretinI-p1/GadgetStore/OsaGadgetStore/obj/",
+        "projectPath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore\\OsaGadgetStore.csproj",
+        "packagesPath": "C:\\Users\\mikeo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikeo\\Desktop\\untitled folder\\OsaretinI-p1\\GadgetStore\\OsaGadgetStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/osaiyen/.config/NuGet/NuGet.Config"
+          "C:\\Users\\mikeo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -116,6 +132,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.3, )"
@@ -136,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

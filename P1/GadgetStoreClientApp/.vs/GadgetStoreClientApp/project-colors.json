@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "76c46fab-acc3-4abc-b12a-2489be5e5c3d": {
+      "ProjectGuid": "76c46fab-acc3-4abc-b12a-2489be5e5c3d",
+      "DisplayName": "GadgetStoreClientApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

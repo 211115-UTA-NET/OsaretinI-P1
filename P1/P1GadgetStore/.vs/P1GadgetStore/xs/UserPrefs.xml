@@ -3,7 +3,7 @@
     <Files>
       <File FileName="P1GadgetStore/Program.cs" Line="3" Column="1" />
       <File FileName="P1GadgetStore/Controllers/TestController.cs" Line="111" Column="1" />
-      <File FileName="P1GadgetStore/testingClass.cs" Line="46" Column="1" />
+      <File FileName="P1GadgetStore/testingClass.cs" Line="46" Column="3" />
       <File FileName="../GadgetStore/OsaGadgetStore/Inventory.cs" Line="24" Column="1" />
       <File FileName="../GadgetStore/OsaGadgetStore/Program.cs" Line="69" Column="1" />
       <File FileName="../GadgetStore/OsaGadgetStore/MyData.cs" Line="9" Column="32" />
@@ -30,11 +30,12 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.P1GadgetStore PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/Program.cs" line="68" column="1" />
       <Breakpoint file="/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/Program.cs" line="65" column="1" />
+      <Breakpoint file="/Users/osaiyen/Desktop/OsaretinI-p1/P1GadgetStore/P1GadgetStore/Controllers/TestController.cs" relfile="P1GadgetStore/Controllers/TestController.cs" line="91" column="1" />
       <Breakpoint file="/Users/osaiyen/Desktop/OsaretinI-p1/P1GadgetStore/P1GadgetStore/Controllers/TestController.cs" relfile="P1GadgetStore/Controllers/TestController.cs" line="111" column="1" />
       <Breakpoint file="/Users/osaiyen/Desktop/OsaretinI-p1/P1GadgetStore/P1GadgetStore/Controllers/TestController.cs" relfile="P1GadgetStore/Controllers/TestController.cs" line="115" column="1" />
       <Breakpoint file="/Users/osaiyen/Desktop/OsaretinI-p1/GadgetStore/OsaGadgetStore/testclass.cs" line="7" column="1" />

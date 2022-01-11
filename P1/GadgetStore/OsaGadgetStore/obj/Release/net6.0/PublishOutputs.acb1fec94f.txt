@@ -1,0 +1,13 @@
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\Settings.job
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\OsaGadgetStore.exe
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\OsaGadgetStore.dll
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\OsaGadgetStore.deps.json
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\OsaGadgetStore.runtimeconfig.json
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\OsaGadgetStore.pdb
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\Newtonsoft.Json.dll
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\System.Data.SqlClient.dll
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\runtimes\win-arm64\native\sni.dll
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\runtimes\win-x64\native\sni.dll
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\runtimes\win-x86\native\sni.dll
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\mikeo\Desktop\untitled folder\OsaretinI-p1\GadgetStore\OsaGadgetStore\obj\Release\net6.0\PubTmp\Out\app_data\Jobs\Triggered\OsaGadgetStore\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
