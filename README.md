@@ -13,15 +13,15 @@ This application is designed for use by a retail store employee to record incomi
 
 ### **Features**
 
-Place an order
-View order history
-View shopping cart
-Place multiple orders
-View total cost
+- Place an order
+- View order history
+- View shopping cart
+- Place multiple orders
+- View total cost
 
 ### **Getting Started**
 
-Use windows, linux, or mac
-Clone or download this repo
-Install .NET 6.0 and up
-Run the app
+- Use windows, linux, or mac
+- Clone or download this repo
+- Install .NET 6.0 and up
+- Run the app
