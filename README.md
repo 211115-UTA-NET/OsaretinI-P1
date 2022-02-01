@@ -4,12 +4,12 @@ This application is designed for use by a retail store employee to record incomi
 
 ### **Technologies Used**
 
-C#
-SQL Server
-Azure
-ASP.NET Core web API
-ADO.NET
-REST
+-C#
+-SQL Server
+-Azure
+-ASP.NET Core web API
+-ADO.NET
+-REST
 
 ### **Features**
 
